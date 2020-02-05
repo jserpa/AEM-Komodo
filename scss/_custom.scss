@@ -1,0 +1,1483 @@
+// Color system
+$white:    #ffffff;
+$gray-100: #f7f7f7;
+$gray-200: #f3f3f3;
+$gray-300: #eeeeee;
+$gray-400: #dcdcdc;
+$gray-500: #c9c8c8;
+$gray-600: #a2a2a2;
+$gray-700: #7f7f7f;
+$gray-800: #555759;
+$gray-900: #54545c;
+$black:    #222222;
+
+// Link blue
+$blue:    #1E8AE7;
+// Lilac purple
+$indigo:  #7474C1;
+// Royal purple
+$purple:  #522D6D;
+// None komodo color
+    $pink:    #e83e8c;
+// TF red
+$red:     #E71316;
+// Tangerine orange
+$orange:  #ED7700;
+// None komodo color
+    $yellow:  #ffc107;
+// Kelly green
+$green:   #3BAD2F;
+// None komodo color
+    $teal:    #20c997;
+    $cyan:    #17a2b8;
+// New Thermo colors
+$rollover-red:#D01013;
+$key-lime-green:#E8FCBC;
+$kiwi-green:#7FBA00;
+$ice-blue:#EBF2FA;
+$hover-blue:#005DAA;
+$TF-midnight-blue:#262262;
+
+$primary:       $red;
+$secondary:     $gray-800;
+$success:       $green;
+$info:          $blue;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+$link:          $blue;
+
+$yiq-text-dark:             $black;
+$body-color:                $black;
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              $blue;
+$link-decoration:                         none;
+$link-hover-color:                        $hover-blue;
+$link-hover-decoration:                   none;
+a:visited {
+    text-decoration: none;
+    color: $TF-midnight-blue;
+}
+
+// Grid columns
+//
+$grid-gutter-width:           32px;
+
+
+// Typography
+//
+@import url("https://thermoux.s3.amazonaws.com/fonts.css");
+@import url("https://thermoux.s3.amazonaws.com/komodo-icons.css");
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-base:            HelveticaNeue;
+
+// Style p element.
+
+$paragraph-margin-bottom:   0rem;
+
+// stylelint-enable value-keyword-case
+
+$font-size-base:              .875rem; // Assumes the browser default, typically `16px` this will set it to '14px'
+
+$headings-font-family:        HelveticaNeue !important;
+
+h4, .h4 {
+  font-weight: bolder;
+}
+//h6, .h6 {
+//  font-family:  HelveticaNeue !important;
+//}
+.display-1, .display-2, .display-3, .display-4 {
+  font-weight: lighter;
+}
+
+$h1-font-size:                32px;
+$h2-font-size:                26px;
+$h3-font-size:                22px;
+$h4-font-size:                20px;
+$h5-font-size:                18px;
+$h6-font-size:                16px;
+
+$headings-margin-bottom:      0rem;
+$headings-font-weight:        none;
+$headings-line-height:        1.2 !default;
+$headings-color:              null !default;
+
+$display1-size:               50px;
+$display2-size:               40px;
+$display3-size:               30px;
+$display4-size:               22px;
+
+$display1-weight:             none;
+$display2-weight:             none;
+$display3-weight:             none;
+$display4-weight:             none;
+
+/*Mobile*/
+// Test
+
+
+
+@media (max-width: 768px) {
+    h1, .h1 {
+        font-size: 26px;
+        line-height: 33px;
+    }
+    h2, .h2 {
+        font-size: 21px;
+        line-height: 26px;
+    }
+    h3, .h3 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    h4, .h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    h5, .h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    h6, .h6 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .display-1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .display-2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .display-3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .display-4 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+.success {
+    color: $success;
+}
+.warning {
+    color: $warning;
+}
+.error {
+    color: $danger;
+}
+.disabled {
+    color: $gray-500;
+}
+.disabled:visited {
+    color: $gray-500;
+}
+.label-medium {
+	font-weight: bold;
+    font-size: 14px !important;
+    line-height: 22px !important;
+}
+.label-bold {
+    font-weight: bolder;
+    font-size: 14px !important;
+    line-height: 22px !important;
+}
+.p-grey {
+    color: $gray-900;
+}
+.alt {
+    font-size: 1rem !important;
+    color: $gray-900;
+}
+/********** Font weights **********/
+.thin {
+	font-weight: 100;
+}
+.light{
+	font-weight: 300;
+}
+.regular {
+	font-weight: inherit;
+}
+.italic {
+	font-style: italic;
+}
+.medium {
+	font-weight: bold;
+}
+.bold {
+	font-weight: bolder;
+}
+
+/********** Accordion **********/
+.accordion .card {
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+.accordion {
+background-color: $white;
+border-radius: 0rem;
+border-right: 0;
+border-left: 0;
+border-bottom: 0px solid rgba(0,0,0,.125);
+}
+
+.card-header {
+margin-bottom: 0;
+background-color: $white !important;
+border-bottom: 1px solid rgba(0,0,0,.125);
+border-top: 1px solid rgba(0,0,0,.125);
+height: 63px;
+margin-bottom: -1px;
+}
+
+/********** Alerts **********/
+//$alert-bg-level:                    -12;
+//$alert-border-level:                -12;
+//$alert-color-level:                 -12;
+.alert {
+  color: $black !important;
+  border-radius: 0px !important;
+  padding: 16px 48px 16px 16px !important;
+}
+.alert.inline-grey {
+  border: 0px solid $white;
+  background-color: $gray-100 !important;
+}
+.alert.inline-white {
+  border: 1px solid $gray-400;
+  background-color: $white !important;
+}
+.alert .icon {
+  vertical-align: middle;
+}
+.alert .close {
+    position: absolute;
+    top: 16px !important;
+    right: 16px !important;
+    padding: 0px !important;
+}
+.alert-info {
+  border-left: 8px solid $info !important;
+}
+.alert-info .icon {
+  color: $info;
+}
+.alert-success {
+  border-left: 8px solid $success !important;
+}
+.alert-success .icon {
+  color: $success;
+}
+.alert-danger {
+  border-left: 8px solid $danger !important;
+}
+.alert-danger .icon {
+  color: $danger;
+}
+.alert-warning {
+  border-left: 8px solid $orange !important;
+}
+.alert-warning .icon {
+  color: $orange;
+}
+
+
+/********** Backgrounds **********/
+.bg-white {
+  background-color: $white !important;
+}
+.bg-lightgrey, .bg-snow-grey {
+  background-color: $gray-100 !important;
+}
+.bg-ice-blue {
+  background-color: $ice-blue !important;
+}
+.bg-midnight-blue {
+  background-color: $TF-midnight-blue !important;
+}
+
+/********** Badges **********/
+.badge {
+  color: $white !important;
+  padding: 8px !important;
+  border-radius: 1rem !important;
+}
+.badge-primary {
+  background-color: $secondary !important;
+}
+.badge-success {
+  color: $white;
+  background-color: $success;
+}
+.badge-warning {
+  color: $white;
+  background-color: $orange;
+}
+.badge-danger {
+  color: $white;
+  background-color: $danger;
+}
+.badge-info {
+  color: $white;
+  background-color: $info;
+}
+.badge-dark-info {
+  color: $white;
+  background-color: $TF-midnight-blue;
+}
+.flag{
+    width:100px;
+    height:20px;
+    color: $white;
+    background-color: $TF-midnight-blue;
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size:11px;
+    vertical-align:middle;
+    overflow: visible;
+    position: relative;
+    line-height: 13px;
+}
+
+.flag:after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: -20px;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    border-bottom: solid 20px $TF-midnight-blue;
+    border-right: solid 20px transparent;
+}
+
+
+/********** Breadcrumbs **********/
+$breadcrumb-padding-y:              0px;
+$breadcrumb-padding-x:              0px;
+$breadcrumb-item-padding:           12px;
+
+$breadcrumb-margin-bottom:          0rem;
+
+$breadcrumb-bg:                     $white;
+$breadcrumb-divider-color:          $gray-600 !default;
+$breadcrumb-active-color:           $gray-600 !default;
+$breadcrumb-divider:                quote("›");
+
+.breadcrumb a active {
+    color: $gray-900;
+    font-size: 11px !important;
+    line-height: 14px !important;
+}
+.breadcrumb {
+    color: $gray-900;
+    font-size: 11px !important;
+    line-height: 14px !important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 12px;
+    padding-left: 0px;
+    color: $gray-900;
+    content: "›";
+}
+
+.breadcrumb a:hover {
+    color: $info;
+    text-decoration: none;
+}
+
+
+/********** Buttons **********/
+.btn {
+	font-weight: bolder;
+    font-size: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 40px;
+    line-height: 20px;
+    border-radius: 3px;
+    border: 1px solid $black;
+    color: $black;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn.disabled, .btn:disabled {
+    color: $gray-700 !important;
+    background-color: $gray-400 !important;
+    border-color: $gray-400 !important;
+}
+.btn-link.disabled, .btn-link:disabled {
+    color: $gray-700 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.btn-lg {
+    height: 50px !important;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.btn-sm {
+    height: 34px !important;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.btn-mini {
+    height: 30px !important;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-outline {
+    background-color: $white !important;
+    border-color:$gray-400 !important;
+    color: $blue !important;
+}
+.btn-outline:hover {
+    background-color: $white !important;
+    border-color: $blue !important;
+    color: $blue !important;
+}
+.btn-outline:active {
+    background-color: $white !important;
+    border-color: $blue !important;
+    color: $blue !important;
+    box-shadow: inset 0 2px 3px 3px $gray-300 !important;
+}
+
+.btn-secondary {
+    background-color: $gray-800 !important;
+    border-color:$gray-800 !important;
+    color: $white !important;
+}
+.btn-secondary:hover {
+    background-color: $black !important;
+    border-color: $black !important;
+    color: $white !important;
+}
+.btn-secondary:active {
+    background-color: $black !important;
+    border-color: $black !important;
+    color: $white !important;
+    box-shadow: inset 0 2px 3px 3px #000000 !important;
+}
+
+.btn-primary {
+    background-color: $red !important;
+    border-color: $red !important;
+    color: $white !important;
+}
+.btn-primary:hover {
+    background-color: $rollover-red !important;
+    border-color: $rollover-red !important;
+    color: $white !important;
+}
+.btn-primary:active {
+    background-color: $rollover-red !important;
+    border-color: $rollover-red !important;
+    color: $white !important;
+    box-shadow: inset 0 2px 5px 2px #b10609 !important;
+}
+
+.btn-info {
+    background-color: $white !important;
+    border-color:$gray-400 !important;
+    color: #565a5c !important;
+}
+.btn-info:hover {
+    background-color: $white !important;
+    border-color: $gray-800 !important;
+    color: #565a5c !important;
+}
+.btn-info:active {
+    background-color: $white !important;
+    border-color: $gray-800 !important;
+    color: #565a5c !important;
+    box-shadow: inset 0 2px 3px 3px $gray-300 !important;
+}
+
+.btn-link {
+    text-decoration: none !important;
+    background-color: none !important;
+    border: 0px !important;
+    border-color:none !important;
+    color: $blue !important;
+}
+.btn-link:hover {
+    text-decoration: none !important;
+    background-color: $white !important;
+    color: #005daa !important;
+}
+.btn-link:active {
+    text-decoration: none !important;
+    background-color: $white !important;
+    color: #262262 !important;
+    box-shadow: none !important;
+}
+.btn-link:hover {
+    text-decoration: none !important;
+}
+
+.btn-white {
+    background-color: transparent !important;
+    border-color: $white !important;
+    color: $white !important;
+}
+.btn-white:hover {
+    background-color: $white !important;
+    border-color: #000000 !important;
+    color: #000000 !important;
+}
+.btn-white:active {
+    background-color: $white !important;
+    border-color: #000000 !important;
+    color: #000000 !important;
+    box-shadow: inset 0 2px 3px 3px $gray-300 !important;
+}
+
+
+/********** Cards **********/
+.card {
+    border-radius: 3px;
+    border: solid 1px $gray-400;
+    background-color: $white;
+    padding: 32px;
+}
+.card-no-p {
+    border-radius: 3px;
+    border: solid 1px $gray-400;
+    background-color: $white;
+    padding: 0px;
+}
+
+
+/*****Checkbox*****/
+.container2 {
+	font-weight: bold;
+    display: block;
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 28px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+// Hide the browser's default checkbox
+.container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+// Create a custom checkbox
+.checkmark2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: $white;
+    border: 1px solid $gray-500;
+}
+
+// On mouse-over, add a grey background color
+.container2:hover input ~ .checkmark2 {
+    background-color: $gray-300;
+}
+
+// When the checkbox is checked, add a blue background
+.container2 input:checked ~ .checkmark2 {
+  width: 20px;
+  height: 20px;
+  border: solid 1px $blue;
+  background-color: $blue;
+
+}
+
+// Create the checkmark/indicator (hidden when not checked)
+.checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+// Show the checkmark when checked
+.container2 input:checked ~ .checkmark2:after {
+    display: block;
+}
+
+// Style the checkmark/indicator
+.container2 .checkmark2:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 10px;
+    border: solid $white;
+    border-width: 0  2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+////////////////////////////////////////////////////////////Disable needs to be fixed
+input[type="checkbox"]:disabled {
+  background: $gray-500;
+}
+ 
+.inline {
+  float: left;
+  margin-right: 48px;
+}
+
+
+/********** Divider **********/
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid $gray-400;
+}
+
+
+/********** Dropdowns **********/
+// Dropdown menu container and contents.
+
+$dropdown-min-width:                10rem !default;
+$dropdown-padding-y:                .5rem !default;
+$dropdown-spacer:                   0px;
+$dropdown-font-size:                $font-size-base !default;
+$dropdown-color:                    $body-color !default;
+$dropdown-bg:                       $white !default;
+$dropdown-border-color:             $gray-500;
+$dropdown-border-radius:            0px;
+$dropdown-border-width:             1px;
+$dropdown-inner-border-radius:      0px;
+$dropdown-divider-bg:               $gray-200 !default;
+$dropdown-divider-margin-y:         24px;
+$dropdown-box-shadow:               0px 6px 8px 0px rgba(34,34,34,0.1);
+
+$dropdown-link-color:               $black;
+$dropdown-link-hover-color:         $black;
+$dropdown-link-hover-bg:            $ice-blue;
+
+$dropdown-link-active-color:        $white;
+$dropdown-link-active-bg:           $info;
+
+$dropdown-link-disabled-color:      $gray-600 !default;
+
+$dropdown-item-padding-y:           .25rem !default;
+$dropdown-item-padding-x:           1.5rem !default;
+
+$dropdown-header-color:             $gray-600 !default;
+
+.btn-dropdown {
+    Border: 1px solid $gray-500 !important;
+    text-align: left !important;
+}
+.btn-dropdown:focus {
+    box-shadow: 0px 6px 8px 0px rgba(34,34,34,0.1) !important;
+}
+.dropdown-menu {
+    top: -1px !important;
+    padding: 0px !important;
+    box-shadow: 0px 6px 8px 0px rgba(34,34,34,0.1);
+}
+.dropdown-item {
+    height: 40px;
+}
+.dropdown-item .container2, .dropdown-item .checkbox {
+    padding-top: 0px;
+    top: 6px;
+}
+.icon-dropdown {
+    position: absolute;
+    top: 32px;
+    right: 16px;
+}
+.icon-dropdown-no-label {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+}
+.icon-dropdown-no-label-lg {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+/********** Drop shadows **********/
+.dropshadow-level-2 {
+    box-shadow: 0px 2px 4px 0px rgba(34,34,34,0.1);
+}
+.dropshadow-level-3 {
+    box-shadow: 0px 4px 6px 0px rgba(34,34,34,0.1);
+}
+.dropshadow-level-4 {
+    box-shadow: 0px 6px 8px 0px rgba(34,34,34,0.1);
+}
+
+
+/**********Input Fields**********/
+$label-margin-bottom:                   1rem;
+
+$input-padding-y:                       .5rem;
+$input-padding-x:                       1rem;
+$input-font-size:                       0.875rem;
+
+//$input-padding-y-sm:                    $input-btn-padding-y-sm !default;
+//$input-padding-x-sm:                    $input-btn-padding-x-sm !default;
+//$input-font-size-sm:                    $input-btn-font-size-sm !default;
+//$input-line-height-sm:                  $input-btn-line-height-sm !default;
+//
+//$input-padding-y-lg:                    $input-btn-padding-y-lg !default;
+//$input-padding-x-lg:                    $input-btn-padding-x-lg !default;
+//$input-font-size-lg:                    $input-btn-font-size-lg !default;
+//$input-line-height-lg:                  $input-btn-line-height-lg !default;
+//
+//$input-bg:                              $white !default;
+//$input-disabled-bg:                     $gray-200 !default;
+//
+//$input-color:                           $gray-700 !default;
+//$input-border-color:                    $gray-400 !default;
+//$input-border-width:                    $input-btn-border-width !default;
+//$input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
+//
+//$input-border-radius:                   $border-radius !default;
+//$input-border-radius-lg:                $border-radius-lg !default;
+//$input-border-radius-sm:                $border-radius-sm !default;
+//
+//$input-focus-bg:                        $input-bg !default;
+//$input-focus-border-color:              lighten($component-active-bg, 25%) !default;
+//$input-focus-color:                     $input-color !default;
+//$input-focus-width:                     $input-btn-focus-width !default;
+//$input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
+//
+//$input-placeholder-color:               $gray-600 !default;
+//$input-plaintext-color:                 $body-color !default;
+//
+//$input-height-border:                   $input-border-width * 2 !default;
+//
+
+.form-group label {
+	font-weight: bold;
+    line-height: 17px;
+    margin-bottom: 0px !important;
+}
+.form-group input {
+//    height: 40px;
+    border-radius: 0px;
+    border-color: $gray-500;
+    margin-top: 0px;
+    color: $black;
+}
+.form-control {
+    padding: 5px 16px !important;
+    line-height: 40px !important;
+    border: 1px solid #C9C8C8;
+    border-radius: 0rem;
+    color: #a2a2a2; 
+    margin-bottom: 32px;    
+}
+.form-control-lg {
+    height: 50px !important;
+}
+.form-control-sm {
+    height: 30px !important;
+}
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+    border-color: $gray-500 !important; 
+    box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.1) !important;
+}
+.form-control {
+    line-height: 40px !important;
+    border-radius: 0px !important;
+    border-color: $gray-500 !important;
+    margin-top: 0px !important;
+    color: $black !important;
+}
+
+
+/**********Lists**********/
+// List group
+//$list-group-color:                  null !default;
+//$list-group-bg:                     $white !default;
+//$list-group-border-color:           rgba($black, .125) !default;
+//$list-group-border-width:           $border-width !default;
+//$list-group-border-radius:          $border-radius !default;
+//
+//$list-group-item-padding-y:         .75rem !default;
+//$list-group-item-padding-x:         1.25rem !default;
+//
+//$list-group-hover-bg:               $gray-100 !default;
+//$list-group-active-color:           $component-active-color !default;
+//$list-group-active-bg:              $component-active-bg !default;
+//$list-group-active-border-color:    $list-group-active-bg !default;
+//
+//$list-group-disabled-color:         $gray-600 !default;
+//$list-group-disabled-bg:            $list-group-bg !default;
+//
+//$list-group-action-color:           $gray-700 !default;
+//$list-group-action-hover-color:     $list-group-action-color !default;
+//
+//$list-group-action-active-color:    $body-color !default;
+//$list-group-action-active-bg:       $gray-200 !default;
+
+
+/**********Modals**********/
+// Padding applied to the modal body
+$modal-inner-padding:               48px;
+
+$modal-dialog-margin:               .5rem !default;
+$modal-dialog-margin-y-sm-up:       1.75rem !default;
+
+$modal-content-color:               null !default;
+$modal-content-bg:                  $white !default;
+$modal-content-border-color:        rgba($black, .2) !default;
+$modal-content-border-width:        none;
+$modal-content-border-radius:       0rem;
+$modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
+$modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
+
+$modal-backdrop-bg:                 #000000;
+$modal-backdrop-opacity:            .5 !default;
+$modal-header-border-color:         none;
+$modal-footer-border-color:         $modal-header-border-color !default;
+$modal-header-border-width:         $modal-content-border-width !default;
+$modal-footer-border-width:         $modal-header-border-width !default;
+$modal-header-padding-y:            48px;
+$modal-header-padding-x:            48px;
+$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
+
+$modal-xl:                          1140px !default;
+$modal-lg:                          800px !default;
+$modal-md:                          500px !default;
+$modal-sm:                          300px !default;
+
+$modal-fade-transform:              translate(0, -50px) !default;
+$modal-show-transform:              none !default;
+$modal-transition:                  transform .3s ease-out !default;
+
+.modal-title {
+    margin-top: -8px;
+}
+/**********Radio button**********/
+/* The container */
+.radio-container {
+    display: block;
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 27px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #ffffff;
+    border: solid 1px #c9c8c8;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+    background-color: #eaeaea;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+  background-color: #1E8AE7;
+  border: solid 0px #1E8AE7;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+ 	top: 1px;
+	left: 1px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #1E8AE7;
+    border: solid 3px #ffffff;
+} 
+
+
+/********** Serch Bars **********/
+.search-dd {
+    width: 280px;
+    height: 50px;
+    text-align: left !important;
+    font-weight: normal !important;
+    background-color: #f9f9f9!important;
+    border: 1px solid #c9c8c8 !important;
+}
+.search-dd:hover {
+    cursor: pointer;
+}
+.input-group.btn-outline-secondary:hover {
+    background-color: #f9f9f9!important;
+    border: 1px solid #c9c8c8 !important;
+}
+.input-lg {
+    margin-left: -2px;
+    height: 50px !important;
+    line-height: 50px !important;
+}
+
+/********** Tabs **********/
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: $black !important;
+    background-color: $white !important;
+    border-color: $gray-400 $gray-400 $white;
+    border-bottom: none;
+}
+
+.nav-tabs {
+    padding-left: 30px;
+    border-bottom: 1px solid $gray-400;
+}
+
+.nav-tabs > li:last-of-type > a {
+    border-top-right-radius: 3px;
+}
+
+.nav-tabs > li:first-of-type > a {
+    border-top-left-radius: 3px;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-radius: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: $gray-100; 
+    border-color: $gray-400;
+    height: 40px;
+    margin-left: -1px;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    font-size: 14px;
+    font-weight: bold;  
+}
+
+// Grey background
+.nav-tabs .nav-item.show .nav-link, .grey.nav-tabs .nav-link.active {
+    color: $black !important;
+    background-color: $gray-100 !important;
+    border-color: $gray-400 $gray-400 $white;
+    border-bottom: none;
+}
+.grey.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-radius: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: $white; 
+    border-color: $gray-400;
+    height: 40px;
+    margin-left: -1px;
+}
+
+// Step
+.nav-tabs .nav-item.show .nav-link, .step.nav-tabs .nav-link.active {
+    color: $black !important;
+    background-color: $white !important;
+    border-color: none !important;
+    border-bottom: 4px solid #EE3134;
+}
+
+.step.nav-tabs {
+    padding-left: 0px;
+    border-bottom: none;
+}
+
+.step.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    color: #B2B2B2 !important;
+    border-bottom: 2px solid #E5E5E5;
+    border-radius: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: transparent !important; 
+    border-color: none;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.step.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: #B2B2B2 !important;
+}
+.step .nav-item {
+    width: 20%
+}
+
+
+
+
+/********** Layout spacing **********/
+/*MARGIN TOP*/
+.mt-l1 {
+    margin-top: 16px;
+}
+.mt-l2 {
+    margin-top: 24px;
+}
+.mt-l3 {
+    margin-top: 32px;
+}
+.mt-l4 {
+    margin-top: 48px;
+}
+.mt-l5 {
+    margin-top: 64px;
+}
+/*MARGIN BOTTOM*/
+.mb-l1 {
+    margin-bottom: 16px;
+}
+.mb-l2 {
+    margin-bottom: 24px;
+}
+.mb-l3 {
+    margin-bottom: 32px;
+}
+.mb-l4 {
+    margin-bottom: 48px;
+}
+.mb-l5 {
+    margin-bottom: 64px;
+}
+/*MARGIN LEFT*/
+.ml-l1 {
+    margin-left: 16px;
+}
+.ml-l2 {
+    margin-left: 24px;
+}
+.ml-l3 {
+    margin-left: 32px;
+}
+.ml-l4 {
+    margin-left: 48px;
+}
+.ml-l5 {
+    margin-left: 64px;
+}
+/*MARGIN RIGHT*/
+.mr-l1 {
+    margin-right: 16px;
+}
+.mr-l2 {
+    margin-right: 24px;
+}
+.mr-l3 {
+    margin-right: 32px;
+}
+.mr-l4 {
+    margin-right: 48px;
+}
+.mr-l5 {
+    margin-right: 64px;
+}
+/*PADDING TOP*/
+.pt-l1 {
+    padding-top: 16px;
+}
+.pt-l2 {
+    padding-top: 24px;
+}
+.pt-l3 {
+    padding-top: 32px;
+}
+.pt-l4 {
+    padding-top: 48px;
+}
+.pt-l5 {
+    padding-top: 64px;
+}
+/*PADDING BOTTOM*/
+.pb-l1 {
+    padding-bottom: 16px;
+}
+.pb-l2 {
+    padding-bottom: 24px;
+}
+.pb-l3 {
+    padding-bottom: 32px;
+}
+.pb-l4 {
+    padding-bottom: 48px;
+}
+.pb-l5 {
+    padding-bottom: 96px;
+}
+/*PADDING LEFT*/
+.pl-l1 {
+    padding-left: 16px;
+}
+.pl-l2 {
+    padding-left: 24px;
+}
+.pl-l3 {
+    padding-left: 32px;
+}
+.pl-l4 {
+    padding-left: 48px;
+}
+.pl-l5 {
+    padding-left: 96px;
+}
+/*PADDING BOTTOM*/
+.pr-l1 {
+    padding-right: 16px;
+}
+.pr-l2 {
+    padding-right: 24px;
+}
+.pr-l3 {
+    padding-right: 32px;
+}
+.pr-l4 {
+    padding-right: 48px;
+}
+.pr-l5 {
+    padding-right: 96px;
+}
+
+/***** SPACING *****/
+/*MARGIN TOP*/
+.mt-s0 {
+    margin-top: 0px;
+}
+.mt-s1 {
+    margin-top: 2px;
+}
+.mt-s2 {
+    margin-top: 4px;
+}
+.mt-s3 {
+    margin-top: 8px;
+}
+.mt-s4 {
+    margin-top: 12px;
+}
+.mt-s5 {
+    margin-top: 16px;
+}
+.mt-s6 {
+    margin-top: 24px;
+}
+.mt-s7 {
+    margin-top: 32px;
+}
+.mt-s8 {
+    margin-top: 40px;
+}
+.mt-s9 {
+    margin-top: 48px;
+}
+/*MARGIN BOTTOM*/
+.mb-s0 {
+    margin-bottom: 0px;
+}
+.mb-s1 {
+    margin-bottom: 2px;
+}
+.mb-s2 {
+    margin-bottom: 4px;
+}
+.mb-s3 {
+    margin-bottom: 8px;
+}
+.mb-s4 {
+    margin-bottom: 12px;
+}
+.mb-s5 {
+    margin-bottom: 16px;
+}
+.mb-s6 {
+    margin-bottom: 24px;
+}
+.mb-s7 {
+    margin-bottom: 32px;
+}
+.mb-s8 {
+    margin-bottom: 40px;
+}
+.mb-s9 {
+    margin-bottom: 48px;
+}
+/*MARGIN LEFT*/
+.ml-s0 {
+    margin-left: 0px;
+}
+.ml-s1 {
+    margin-left: 2px;
+}
+.ml-s2 {
+    margin-left: 4px;
+}
+.ml-s3 {
+    margin-left: 8px;
+}
+.ml-s4 {
+    margin-left: 12px;
+}
+.ml-s5 {
+    margin-left: 16px;
+}
+.ml-s6 {
+    margin-left: 24px;
+}
+.ml-s7 {
+    margin-left: 32px;
+}
+.ml-s8 {
+    margin-left: 40px;
+}
+.ml-s9 {
+    margin-left: 48px;
+}
+/*MARGIN RIGHT*/
+.mr-s0 {
+    margin-right: 0px;
+}
+.mr-s1 {
+    margin-right: 2px;
+}
+.mr-s2 {
+    margin-right: 4px;
+}
+.mr-s3 {
+    margin-right: 8px;
+}
+.mr-s4 {
+    margin-right: 12px;
+}
+.mr-s5 {
+    margin-right: 16px;
+}
+.mr-s6 {
+    margin-right: 24px;
+}
+.mr-s7 {
+    margin-right: 32px;
+}
+.mr-s8 {
+    margin-right: 40px;
+}
+.mr-s9 {
+    margin-right: 48px;
+}
+/*PADDING TOP*/
+.pt-s0 {
+    padding-top: 0px;
+}
+.pt-s1 {
+    padding-top: 2px;
+}
+.pt-s2 {
+    padding-top: 4px;
+}
+.pt-s3 {
+    padding-top: 8px;
+}
+.pt-s4 {
+    padding-top: 12px;
+}
+.pt-s5 {
+    padding-top: 16px;
+}
+.pt-s6 {
+    padding-top: 24px;
+}
+.pt-s7 {
+    padding-top: 32px;
+}
+.pt-s8 {
+    padding-top: 40px;
+}
+.pt-s9 {
+    padding-top: 48px;
+}
+/*PADDING BOTTOM*/
+.pb-s0 {
+    padding-bottom: 0px;
+}
+.pb-s1 {
+    padding-bottom: 2px;
+}
+.pb-s2 {
+    padding-bottom: 4px;
+}
+.pb-s3 {
+    padding-bottom: 8px;
+}
+.pb-s4 {
+    padding-bottom: 12px;
+}
+.pb-s5 {
+    padding-bottom: 16px;
+}
+.pb-s6 {
+    padding-bottom: 24px;
+}
+.pb-s7 {
+    padding-bottom: 32px;
+}
+.pb-s8 {
+    padding-bottom: 40px;
+}
+.pb-s9 {
+    padding-bottom: 48px;
+}
+/*PADDING LEFT*/
+.pl-s0 {
+    padding-left: 0px;
+}
+.pl-s1 {
+    padding-left: 2px;
+}
+.pl-s2 {
+    padding-left: 4px;
+}
+.pl-s3 {
+    padding-left: 8px;
+}
+.pl-s4 {
+    padding-left: 12px;
+}
+.pl-s5 {
+    padding-left: 16px;
+}
+.pl-s6 {
+    padding-left: 24px;
+}
+.pl-s7 {
+    padding-left: 32px;
+}
+.pl-s8 {
+    padding-left: 40px;
+}
+.pl-s9 {
+    padding-left: 48px;
+}
+/*PADDING RIGHT*/
+.pr-s0 {
+    padding-right: 0px;
+}
+.pr-s1 {
+    padding-right: 2px;
+}
+.pr-s2 {
+    padding-right: 4px;
+}
+.pr-s3 {
+    padding-right: 8px;
+}
+.pr-s4 {
+    padding-right: 12px;
+}
+.pr-s5 {
+    padding-right: 16px;
+}
+.pr-s6 {
+    padding-right: 24px;
+}
+.pr-s7 {
+    padding-right: 32px;
+}
+.pr-s8 {
+    padding-right: 40px;
+}
+.pr-s9 {
+    padding-right: 48px;
+}
+
+@import "bootstrap";

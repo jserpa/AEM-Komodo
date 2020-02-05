@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+
+
+  <!-- Komodo styles -->
+<!--  <link rel="stylesheet" href="css/komodo.css">-->
+  <!--Custom Bootstrap4-->
+  <link rel="stylesheet" href="/scss/_custom.css"/> 
+
+  <!-- Komodo styles -->
+  <link rel="stylesheet" href="css/header.css"/>
+
+  <!-- Komodo Icons --> 
+  <link rel="stylesheet" href="komodo-icons.css"/>
+
+
+  <title>qPCR Template</title>
+ </head>
+ <body>
+  <!------Header------->
+<div class="header-container fixed">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header-max-width">
+        <button class="navbar-toggler mr-s4" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-24-hamburgerMenu-bold"></span>
+        </button>
+        <img class="header-logo" src="//www.thermofisher.com/content/dam/LifeTech/Images/Header/logo-color.png" alt="Thermo Fisher Scientific Logo"/>
+        <div class="scroll-show hide input-group ml-s8 mr-s8">
+            <div class="dropdown">
+                <div class="search-dd-button">
+                <input class="form-control search-dd" type="text" id="dropdownMenu5" placeholder="Search All"><span class="icon-dropdown-no-label-lg icon-8-caret-down"></span>
+                </div>
+                <div class="search-dd-container dropshadow-level-4" aria-labelledby="dropdownMenu5">
+                    <span class="search-dd-head">All Categories</span>
+                    <span class="search-dd-subhead medium disabled">Popular Product Areas</span>
+                    <span class="search-dd-item">Gene Exp Assays</span>
+                    <span class="search-dd-item">Primary Antibodies</span>
+                    <span class="search-dd-item">Secondary Antibodies</span>
+                    <span class="search-dd-item">Pathology Antibodies</span>
+                    <span class="search-dd-item">Protein Biology</span>
+                    <span class="search-dd-item">Cell Culture</span>
+                    <span class="search-dd-item">Secondary Antibodies</span>
+                    <span class="search-dd-item">PCR/Real-Time PCR</span>
+                    <span class="search-dd-item">Lab Equipment</span>
+                    <span class="search-dd-item">Plastics/Supplies</span>
+                    <span class="search-dd-item">DNA/RNA Purification</span>
+                    <span class="search-dd-item">Cloning</span>
+                    <span class="search-dd-item">SNP Genotyping</span>
+                    <span class="search-dd-item">Sequencing</span>
+                    <span class="search-dd-item">Clinical</span>
+                    <span class="search-dd-item">Bioproduction</span>
+                </div>
+            </div>
+            <input type="text" class="form-control input-lg" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-secondary btn-lg" type="button"><span class="icon-32-search-mono"></span></button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse scroll" id="">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 header-link ml-s3 medium">
+                <!--Popular-->
+                <li class="nav-item popular-dd-button"><a class="nav-link" href="#">Popular</a></li>
+                <div class="container-fluid pl-0 pr-0 dd-full popular-dd ml-l2 mr-l2 dropshadow-level-4" id="popular">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <a href="#"><div class="popular-cards"><img src="//placehold.it/640x480" class="img-fluid"/>
+                            <p class="regular pt-s5">TaqMan Real-Time PCR Assays</p></div></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><div class="popular-cards"><img src="//placehold.it/640x480" class="img-fluid"/>
+                            <p class="regular pt-s5">Antibodies</p></div></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><div class="popular-cards"><img src="//placehold.it/640x480" class="img-fluid"/>
+                            <p class="regular pt-s5">Oligos, Primers & Probes</p></div></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><div class="popular-cards"><img src="//placehold.it/640x480" class="img-fluid"/>
+                            <p class="regular pt-s5">GeneArt Gene Synthesis</p></div></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><div class="popular-cards"><img src="//placehold.it/640x480" class="img-fluid"/>
+                            <p class="regular pt-s5">Cell Culture Plastics</p></div></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Applications & Techniques-->
+                <li class="nav-item apps-dd-button"><a class="nav-link" href="#">Applications & Techniques</a></li>
+                <div class="container-fluid pl-0 pr-0 dd-full apps-dd ml-l2 mr-l2 dropshadow-level-4" id="apps">
+                    <div class="row no-gutters full-height">
+                        <div class="col">
+                            <div class="apps-cards right-boarder">
+                                <p class="pt-s2 pl-s5 bold">Brands</p>
+                                <div>Thermo Scientific</div>
+                                <div>Applied Biosystems</div>
+                                <div>Invitrogen</div>
+                                <div>Fisher Scientific</div>
+                                <div>Unity Lab Services</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="apps-cards right-boarder pb-s5">
+                                <p class="pt-s2 pl-s5 bold">Life Science</p>
+                                <div>Antibodies</div>
+                                <div>Cell Analysis</div>
+                                <div>Cell Culture & Transfection</div>
+                                <div>Cloning</div>
+                                <div>DNA & RNA Purification & Analysis</div>
+                                <div>Epigenetics</div>
+                                <div>Flow Cytometry</div>
+                                <div>Gene Expression Analysis & Genotyping</div>
+                                <div>Genome Editing</div>
+                                <div>Microarray Analysis</div>
+                                <div>Oligos, Primers, Probes, & Genes</div>
+                                <div>PCR</div>
+                                <div>Protein Biology</div>
+                                <div>Real-time PCR</div>
+                                <div>RNAi</div>
+                                <div>Sequencing</div>
+                                <div>Stem Cell Research</div>
+                                <div>Synthetic Biology</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="apps-cards right-boarder">
+                                <p class="pt-s2 pl-s5 bold">Industrial & Applied Science</p>
+                                <div>Agrigenomics</div>
+                                <div>Animal Health</div>
+                                <div>Bioprocessing</div>
+                                <div>Cement, Coal & Minerals</div>
+                                <div>Chromatography</div>
+                                <div>Drug Discovery & Development</div>
+                                <div>Electron Microscopy</div>
+                                <div>Environmental</div>
+                                <div>Food & Beverage</div>
+                                <div>Forensics</div>
+                                <div>Manufacturing & Processing</div>
+                                <div>Mass Spectrometry</div>
+                                <div>Microbiology</div>
+                                <div>Pharma & Biopharma</div>
+                                <div>Radiation Detection & Measurement</div>
+                                <div>Safety and Security Threat Detection</div>
+                                <div>Spectroscopy, Elemental & Isotope Analysis</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="apps-cards right-boarder">
+                                <p class="pt-s2 pl-s5 bold">Clinical & Diagnostics</p>
+                                <div>Anatomical Pathology</div>
+                                <div>Biobanking</div>
+                                <div>Cancer Research</div>
+                                <div>Clinical Genomics</div>
+                                <div>Clinical Microbiology</div>
+                                <div>Clinical & Translational Research</div>
+                                <div>Diagnostic Development</div>
+                                <div>Diagnostic Testing</div>
+                                <div>Precision Medicine</div>
+                                <div>Preclinical to Companion Diagnostic Development</div>
+                                <div>Public Health</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="apps-cards">
+                                <p class="pt-s2 pl-s5 bold">Lab Solutions</p>
+                                <div>Chemicals</div>
+                                <div>Lab Automation</div>
+                                <div>Lab Data Management & Analysis Software</div>
+                                <div>Lab Equipment</div>
+                                <div>Lab Plasticware & Supplies</div>
+                                <div>Sample Storage</div>
+                                <p class="pt-s5 pl-s5 bold">Other Resources</p>
+                                <div>Product Selection Guides</div>
+                                <div>Services</div>
+                                <div>New Products</div>
+                                <div>Promotions</div>
+                                <div>Online Offers</div>
+                                <div>Learning Centers</div>
+                                <div>OEM & Commercial Supply</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Shop All Products-->
+                <li class="nav-item shop-dd-button"><a class="nav-link" href="#">Shop All Products</a></li>
+                <div class="container-fluid pl-0 pr-0 dd-full shop-dd ml-l2 mr-l2 dropshadow-level-4">
+                    <div class="row no-gutters full-height">
+                        <div class="col">
+                            <div class="right-boarder pr-s5 pl-s5">
+                                <div class="row pt-s4 pb-s4">
+                                    <div class="h5 float-left col-7">Save up to 50% on GEA</div>
+                                    <img class="img-fluid float-right col-5" src="//placehold.it/640x480">
+                                </div>
+                                <div class="row pt-s4 pb-s4">
+                                    <div class="h5 float-left col-7">Online-Only Offers Availble now</div>
+                                    <img class="img-fluid float-right col-5" src="//placehold.it/640x480">
+                                </div>
+                                <div class="row pt-s4 pb-s4">
+                                    <div class="h5 float-left col-7">Save 47% Off LV-Max</div>
+                                    <img class="img-fluid float-right col-5" src="//placehold.it/640x480">
+                                </div>
+                                <div class="row pt-s4 pb-s4">
+                                    <div class="h5 float-left col-7">Save up to 35% on Cell Culture Essentials</div>
+                                    <img class="img-fluid float-right col-5" src="//placehold.it/640x480">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="apps-cards right-boarder pb-s5">
+                                <p class="pt-s2 pl-s5  bold">Most Popular Products</p>
+                                <div>Beakers</div>
+                                <div>Lab Centrifuges</div>
+                                <div>Ultra Low–Temperature Freezers</div>
+                                <div>Lipofectamine Reagents</div>
+                                <div>Nalgene Labware</div>
+                                <div>Oligos, Primers, Probes & Nucleotides</div>
+                                <div>Pipettes & Pipette Tips</div>
+                                <div>SuperScript Reverse Transcriptase</div>
+                                <div>TaqMan Real-Time PCR Assays</div>
+                                <div>TRIzol Reagents</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="apps-cards right-boarder pb-s5">
+                                <p class="pt-s2 pl-s5 bold">Most Popular Categories</p>
+                                <div>Antibodies & Immunoassays</div>
+                                <div>Cell Culture & Transfection Reagents</div>
+                                <div>Chromatography Columns, Resins, & Spin Filters</div>
+                                <div>Drug Discovery Assays</div>
+                                <div>Gels & Membranes</div>
+                                <div>Instruments & Equipment</div>
+                                <div>Lab Reagents & Chemicals</div>
+                                <div>Lab Supplies, Plastics & Glassware</div>
+                                <div>Primers/Oligos, Cloning & Gene Synthesis</div>
+                                <div>Software & Digital Storage</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="apps-cards">
+                                <p class="pt-s2 pl-s5 bold">Order Tools</p>
+                                <div>How to Order</div>
+                                <div>Quick Order</div>
+                                <div>Track Your Order</div>
+                                <div>Order History</div>
+                                <div>Order Support</div>
+                                <div>Contact Us</div>
+                                <div>Shop All Products</div>
+                                <div>Shop All Services</div>
+                                <div>Product Selection Guides</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Services-->
+                <li class="nav-item service-dd-button"><a class="nav-link" href="#">Services</a>
+                    <div class="apps-cards service-dd dropshadow-level-4 pt-s5 pb-s5">
+                        <div>Services Marketplace</div>
+                        <div>Custom Services</div>
+                        <div>Enterprise-Level Lab Informatics</div>
+                        <div>Enterprise Services</div>
+                        <div>Financial & Leasing Services</div>
+                        <div>Insterment Services</div>
+                        <div>OEM & Commercial Supply</div>
+                        <div class="pb-s5">Training Services</div>
+                        <p class="pt-s5 border-top pl-s5 bold"> Full Service Directory</p>
+                        <div class="">Full Services Directory
+View all instrument, enterprise, custom, training, and partnering services</div>
+                    </div>
+                </li>
+                <!--Support-->
+                <li class="nav-item support-dd-button"><a class="nav-link" href="#">Support</a></li>
+                <div class="container-fluid pl-0 pr-0 dd-full support-dd ml-l2 mr-l2 dropshadow-level-4">
+                    <div class="row no-gutters full-height">
+                        <div class="col">
+                            <div class="apps-cards right-boarder pb-s5">
+                                <p class="pt-s2 pl-s5 bold">Product Documentation</p>
+                                <div>Manuals</div>
+                                <div>Safety Data Sheets (SDS)</div>
+                                <div>Certificates of Analysis & Conformance</div>
+                                <div>CE Delarations of Conformity</div>
+                                <div>RoHS Certificates</div>
+                                <div>Manufacturing Site ISO Certifications</div>
+                                <p class="pt-s5 pl-s5 bold">Other Product Informatio</p>
+                                <div>Citations & References</div>
+                                <div>Prtoduc Literature</div>
+                                <div>Vector Maps</div>
+                                <div>Chemical Structures</div>
+                                <div>Spectral Date</div>
+                                <div>Media Formulations</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="apps-cards right-boarder pb-s5">
+                                <p class="pt-s2 pl-s5 bold">Product Support</p>
+                                <div>Knowledge Base & FAQs</div>
+                                <div>Insrument Support</div>
+                                <div>Support Centers</div>
+                                <div>Contact Us</div>
+                                <p class="pt-s2 pl-s5 bold">Educational Resources</p>
+                                <div>Learning Centers</div>
+                                <div>Webinars</div>
+                                <div>Gibco Cell Culture Basics</div>
+                                <div>Protein Methods Library</div>
+                                <div>Supplemental Protocols</div>
+                                <div>Newsletters & Lournals</div>
+                                <div>Training Services</div>
+                                <div>Events</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="apps-cards">
+                                <p class="pt-s2 pl-s5">Popular Tools & Calculators</p>
+                                <div>Lab Apps for Mobile Devices</div>
+                                <div>Oligos Tools & Utilities Hub</div>
+                                <div>Tm Calculator for PCR</div>
+                                <div>Molecular Biology Tools</div>
+                                <div>Gibco Media Formulation Tool</div>
+                                <div>Cell Culture Useful Numbers</div>
+                                <div>Fluorescence SpectraViewer</div>
+                                <div>Flow Cytometry Panel Builder</div>
+                                <div>Cell Staining Tool</div>
+                                <div>Protein Gel Conversion Tool</div>
+                                <div>Switch to Nunc Plastics Tool</div>
+                                <div> Transfection Protocol Calculator</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        
+        <ul class="list-inline header-link p-grey scroll">
+            <span class="">
+                <span class="d-none d-lg-inline">
+                    <li class="list-inline-item"><a href="#">Connect <span class="d-none d-xl-inline">Your Lab</span></a></li>
+                    <li class="list-inline-item sign-in-dd-button pr-s3"> <a href="#">Sign In <span class="icon-8-caret-down"></span></a></li>
+                    <div class="container-fluid pl-0 pr-0 sign-in-dd dropshadow-level-4">
+                        <div class="row no-gutters full-height">
+                            <div class="col-6">
+                                <div class="apps-cards right-boarder pb-s5 pl-s7 pt-s7 pr-s7">
+                                    <button type="button" class="btn btn-secondary btn-block">Register Now</button>
+                                    <p class="pt-s5" alt-grey>View your account pricing, request web quotes, save and reorder favorite products, and find technical documentation.</p>
+                                    <h3 class="mt-s6">Member feature</h3>
+                                    <p class="pt-s2 bold">Unity lab services</p>
+                                    <p>Short product blurb describing benefits for user</p>
+                                    <p class="pt-s2 bold">Aspire member program</p>
+                                    <p>Short product blurb describing benefits for user</p>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="apps-cards pb-s5 pl-s7 pt-s7 pr-s7">
+                                    <button type="button" class="btn btn-primary btn-block">Sign In</button>
+                                    <h3 class="mt-s6">Your account</h3>
+                                    <p>Account</p>
+                                    <p>Profile</p>
+                                    <h3 class="mt-s6">Your orders</h3>
+                                    <p>Orders</p>
+                                    <p>Recurring orders</p>
+                                    <p>Favorites</p>
+                                    <p>Shared Lists</p>
+                                    <p>Custom Products & Projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+                <span class="vr pt-l2 pb-s6 pr-s4 d-inline d-lg-none"></span>
+                <li class="list-inline-item d-inline d-lg-none d-lg-none mobile-search-button"><a href="#"><span class="icon-24-search-mono header-icon"></span></a></li>
+                <span class="d-none d-md-inline">
+                <span class="vr pt-l2 pb-s6 pl-s5 d-inline d-lg-none"></span>
+                <li class="list-inline-item mr-s5"><a href="#" class=""><span class="tf-red ">Quick Order</span></a></li>
+                </span>
+            </span>
+            <span class="vr pt-l2 pb-s6 d-inline d-lg-none"></span> 
+        </ul>
+        <span class="header-link">
+            <a href="#" class="list-inline-item pl-s5 pr-s5"><span class="icon-24-cart-default-mono tf-red header-icon"></span></a>
+        </span>
+    </nav>
+    <div class="container-fluid header-max-width bottom-padding-fix scroll">        
+        <div class="d-none d-lg-block">
+            <div class="input-group">
+                <div class="dropdown">
+                    <div class="search-dd-button">
+                    <input class="form-control search-dd" type="text" id="dropdownMenu5" placeholder="Search All"><span class="icon-dropdown-no-label-lg icon-8-caret-down"></span>
+                    </div>
+                    <div class="search-dd-container dropshadow-level-4" aria-labelledby="dropdownMenu5">
+                        <span class="search-dd-head">All Categories</span>
+                        <span class="search-dd-subhead medium disabled">Popular Product Areas</span>
+                        <span class="search-dd-item">Gene Exp Assays</span>
+                        <span class="search-dd-item">Primary Antibodies</span>
+                        <span class="search-dd-item">Secondary Antibodies</span>
+                        <span class="search-dd-item">Pathology Antibodies</span>
+                        <span class="search-dd-item">Protein Biology</span>
+                        <span class="search-dd-item">Cell Culture</span>
+                        <span class="search-dd-item">Secondary Antibodies</span>
+                        <span class="search-dd-item">PCR/Real-Time PCR</span>
+                        <span class="search-dd-item">Lab Equipment</span>
+                        <span class="search-dd-item">Plastics/Supplies</span>
+                        <span class="search-dd-item">DNA/RNA Purification</span>
+                        <span class="search-dd-item">Cloning</span>
+                        <span class="search-dd-item">SNP Genotyping</span>
+                        <span class="search-dd-item">Sequencing</span>
+                        <span class="search-dd-item">Clinical</span>
+                        <span class="search-dd-item">Bioproduction</span>
+                     </div>
+                </div>
+                <input type="text" class="form-control input-lg" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary btn-lg" type="button"><span class="icon-32-search-mono"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mobile-search">    
+    <div class="row mt-l5 pt-l2">
+        <div class="col-12 col-md-8 m-md-auto pb-l2">
+            <h2 class="text-center"><span class="p-grey">Search</span> Thermo Fisher Scientific</h2>
+        </div>
+        <div class="col-12 col-md-8 m-md-auto">
+            <div class="dropdown">
+                <div class="search-dd-button btn-block">
+                <input class="form-control search-dd w-100" type="text" id="dropdownMenu5" placeholder="Search All"><span class="icon-dropdown-no-label-lg icon-8-caret-down"></span>
+                </div>
+                <div class="search-dd-container dropshadow-level-4" aria-labelledby="dropdownMenu5">
+                    <span class="search-dd-head">All Categories</span>
+                    <span class="search-dd-subhead medium disabled">Popular Product Areas</span>
+                    <span class="search-dd-item">Gene Exp Assays</span>
+                    <span class="search-dd-item">Primary Antibodies</span>
+                    <span class="search-dd-item">Secondary Antibodies</span>
+                    <span class="search-dd-item">Pathology Antibodies</span>
+                    <span class="search-dd-item">Protein Biology</span>
+                    <span class="search-dd-item">Cell Culture</span>
+                    <span class="search-dd-item">Secondary Antibodies</span>
+                    <span class="search-dd-item">PCR/Real-Time PCR</span>
+                    <span class="search-dd-item">Lab Equipment</span>
+                    <span class="search-dd-item">Plastics/Supplies</span>
+                    <span class="search-dd-item">DNA/RNA Purification</span>
+                    <span class="search-dd-item">Cloning</span>
+                    <span class="search-dd-item">SNP Genotyping</span>
+                    <span class="search-dd-item">Sequencing</span>
+                    <span class="search-dd-item">Clinical</span>
+                    <span class="search-dd-item">Bioproduction</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-8 m-md-auto">
+            <input type="text" class="form-control input-lg" placeholder="Search" aria-label="Recipient's username">
+        </div>
+        <div class="col-12 col-md-8 m-md-auto">
+            <div class="input-group-append">
+            <button class="btn btn-secondary btn-lg btn-block" type="button"><span class="icon-32-search-mono"></span></button>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="close-dd"></div>
+<!------End Header------->
+  <div class="body" style="height: 3000px"></div>
+ 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     
+
+<script type="text/javascript">
+    $( document ).ready(function() {
+        console.log( "ready!" );
+        $('.navbar-toggler').click(function() {
+            console.log( "nav!" );
+        });
+//        $('.search-dd-button').click(function() {
+//            $(this).firstChild.find(".icon-8-caret-down").removeClass("icon-8-caret-down").addClass("icon-8-caret-up");
+//        } else {
+//            $(this).firstChild.find(".icon-8-caret-up").removeClass("icon-8-caret-up").addClass("icon-8-caret-down");
+//        });
+//        $('.close-dd').hide();
+        // Close all on click outside of dropdown
+        $('.body, input, a').click(function() {
+            $('.search-dd-container').hide();
+            $('.popular-dd').hide();
+            $('.apps-dd').hide();
+            $('.shop-dd').hide();
+            $('.service-dd').hide();
+            $('.support-dd').hide();
+            $('.sign-in-dd').hide();
+            $('.nav-item').removeClass('active');
+            $('.sign-in-dd-button').removeClass('active');
+            $('.mobile-search').addClass('d-none');
+        });
+//        $('.close-dd').click(function() {
+//            console.log( "Close DD!" );
+//            $('.mobile-search').hide();
+//        });
+        // Search Dropdown
+        $('.search-dd-container').hide();
+        $('.search-dd-button').click(function() {
+            $('.search-dd-container').show();
+        });
+        // Enters selection into  Search dropdow input
+        $('.search-dd-item').click(function() {
+            $('.search-dd-container').hide();
+            $('.search-dd').val($(this).text());
+            $('.close-dd').show();
+        });
+        // Popular Dropdown
+        $('.popular-dd').hide();
+        $('.popular-dd-button').click(function() {
+            $(this).addClass('active');
+            $('.popular-dd').show();
+        });
+        // Applications & Techniques Dropdown
+        $('.apps-dd').hide();
+        $('.apps-dd-button').click(function() {
+            $(this).addClass('active');
+            $('.apps-dd').show();
+        });
+        // Shop All Poriducts Dropdown
+        $('.shop-dd').hide();
+        $('.shop-dd-button').click(function() {
+            $(this).addClass('active');
+            $('.shop-dd').show();
+        });
+        // Shop All Poriducts Dropdown
+        $('.service-dd').hide();
+        $('.service-dd-button').click(function() {
+            $(this).addClass('active');
+            $('.service-dd').show();
+        });
+        // Support All Poriducts Dropdown
+        $('.support-dd').hide();
+        $('.support-dd-button').click(function() {
+            $(this).addClass('active');
+            $('.support-dd').show();
+        });
+        // Sign In 
+        $('.sign-in-dd').hide();
+        $('.sign-in-dd-button').click(function() {
+            $(this).addClass('active');
+            $('.sign-in-dd').show();
+        });
+        // Mobile search
+        $('.mobile-search').hide();
+        $('.mobile-search-button').click(function() {
+            $(this).toggleClass('active');
+            $('.mobile-search').toggle();
+            console.log( "Search!" );
+            $('.mobile-search').removeClass('d-none');
+        });
+        
+        if ($(window).width() < 992) {
+            $('.mobile-search').hide();
+        }
+        else {
+            $(window).scroll(function(){
+                var sticky = $('.scroll'),
+                scroll = $(window).scrollTop();
+                if (scroll >= 100) sticky.addClass('hide');
+                else sticky.removeClass('hide');
+
+                var stickyShow = $('.scroll-show'),
+                scroll = $(window).scrollTop();
+                if (scroll >= 100) stickyShow.removeClass('hide');
+                else stickyShow.addClass('hide');
+            });
+        }
+    });  
+</script>
+ </body>
+</html>

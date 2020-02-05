@@ -1,0 +1,121 @@
+<!--<div class="container-fluid" data-sly-use.component="com.thermofisher.wcm.diagnostics.core.utils.ComponentUtil" id="${component.getUniqueID}">	
+	<div class="row header" data-sly-use.toptoolbar="TopToolbar">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="${toptoolbar.hideAllSites ? 'col-sm-12' : 'col-sm-11'}" id="header-inner-wrapper">
+					<div class="header-inner row">
+						<div class="col-sm-5" data-sly-use.pageContext="/apps/diagnostics/commons/context.js">
+							<a data-sly-test="${toptoolbar.getBuyerType == 'patient'}"
+							   href="/content/diagnostics/patient/global/en/allergy.html?redirect=false">
+								<img data-src="/content/dam/diagnostics/components/structure/logos/patient-logo-allergy-insider.svg" class="buyer-type-logo" alt="Allergy Insider">
+							</a>
+							<a data-sly-test="${toptoolbar.getBuyerType == 'hcp'}"
+							   href="/content/diagnostics/hcp/global/en/allergy-autoimmune-diseases.html">
+								<img data-src="/content/dam/diagnostics/components/structure/logos/hcp-logo-allergy-autoimmune-disease.svg" class="buyer-type-logo" alt="Allergy & Autoimmune Disease">
+							</a>
+							<a data-sly-test="${toptoolbar.getBuyerType == 'lab'}"
+							   href="/content/diagnostics/lab/global/en/laboratory-value.html">
+								<img data-src="/content/dam/diagnostics/components/structure/logos/lab-logo-allergy-autoimmune-disease.svg" class="buyer-type-logo" alt="Allergy & Autoimmune Disease">
+							</a>
+						</div>
+
+						<div class="col-sm-7">
+							<span class="glyphicon glyphicon-menu-hamburger pull-right" id="mobile-nav-btn" aria-hidden="true"></span>
+							<img data-src="/content/dam/diagnostics/components/structure/icons/${toptoolbar.getBuyerType}-search-icon.png" class="pull-right mobile-search-btn" alt="${toptoolbar.getSearchPlaceholderText}">
+							<form class="search-form" action="${pageContext.basePath}/search.html" method="GET">
+								<input class="header-input" type="text" id="header-search" name="search" placeholder="${toptoolbar.getSearchPlaceholderText}">
+								<span class="search-button">&nbsp;</span>
+							</form>
+						</div>
+					</div>
+				</div>
+
+
+				<div data-sly-test="${!toptoolbar.hideAllSites}" class="col-sm-1" id="site-selector-container" data-state="${toptoolbar.getSiteSelectorState}">
+
+					<div data-sly-test="${toptoolbar.getBuyerType == 'patient'}" class="site_selector_wrapper row">
+						<div class="col-sm-2 site-block-wrapper">
+							<div class="site-block">+</div>
+						</div>
+						<div data-sly-test="${!toptoolbar.hideHCPSite}" class="col-sm-5 site-block-wrapper" data-site="HCP">
+							<div class="site-block">${toptoolbar.getHCPSiteBtnText}</div>
+						</div>
+						<div data-sly-test="${!toptoolbar.hideLabSite}" class="col-sm-5 site-block-wrapper" data-site="Lab">
+							<div class="site-block">${toptoolbar.getLabSiteBtnText}</div>
+						</div>
+					</div>
+					
+					<div data-sly-test="${toptoolbar.getBuyerType == 'hcp'}" class="site_selector_wrapper row">
+						<div class="col-sm-2 site-block-wrapper">
+							<div class="site-block">+</div>
+						</div>
+						<a href="/content/diagnostics/patient/global/en/allergy.html?redirect=false" data-sly-test="${!toptoolbar.hidePatientSite}"
+						   class="col-sm-5 site-block-wrapper" data-site="Patient" data-url="">
+							<div class="site-block">${toptoolbar.getPatientSiteBtnText}</div>
+						</a>
+						<div data-sly-test="${!toptoolbar.hideLabSite}" class="col-sm-5 site-block-wrapper" data-site="Lab">
+							<div class="site-block">${toptoolbar.getLabSiteBtnText}</div>
+						</div>
+					</div>
+					
+					<div data-sly-test="${toptoolbar.getBuyerType == 'lab'}" class="site_selector_wrapper row">
+						<div class="col-sm-2 site-block-wrapper">
+							<div class="site-block">+</div>
+						</div>
+						<a href="/content/diagnostics/patient/global/en/allergy.html?redirect=false" data-sly-test="${!toptoolbar.hidePatientSite}"
+						   class="col-sm-5 site-block-wrapper" data-site="Patient" data-url="">
+							<div class="site-block">${toptoolbar.getPatientSiteBtnText}</div>
+						</a>
+						<div data-sly-test="${!toptoolbar.hideHCPSite}" class="col-sm-5 site-block-wrapper" data-site="HCP">
+							<div class="site-block">${toptoolbar.getHCPSiteBtnText}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div data-sly-test="${!toptoolbar.hideAllSites}" id="site-indicator-modal" class="info-modal">
+				<div class="inner-info-modal">
+					<div class="row">
+						<div class="col-sm-2"><img data-src="/content/dam/diagnostics/components/structure/icons/people.png" alt=""></div>
+						<div class="col-sm-10">
+							<h3 data-sly-test="${toptoolbar.getBuyerType == 'patient'}">${toptoolbar.getPatientIndicatorModalText}</h3>
+							<h3 data-sly-test="${toptoolbar.getBuyerType == 'hcp'}">${toptoolbar.getHCPIndicatorModalText}</h3>
+							<h3 data-sly-test="${toptoolbar.getBuyerType == 'lab'}">${toptoolbar.getLabIndicatorModalText}</h3>
+						</div>
+					</div>
+				</div>
+				<div class="info-modal-close-btn">&#10005;</div>
+			</div>
+			
+		 </div>
+	</div>
+</div>
+
+
+<div data-sly-test="${!toptoolbar.hideAllSites}" id="hcp-site-modal" class="info-modal">
+	<div class="inner-info-modal">
+		<h3>${toptoolbar.getHCPSiteModalTitleText}</h3>
+		<p>${toptoolbar.getHCPSiteModalBodyText}</p>
+
+	</div>
+		<div class="info-modal-btn-wrapper">
+			<a href="${toptoolbar.getHCPSiteModalURL}.html" class="enter-website-link"><span class="info-modal-btn">${toptoolbar.getHCPSiteModalLinkText}</span></a>
+		</div>
+	<div class="info-modal-close-btn">&#10005;</div>
+</div>
+
+<div data-sly-test="${!toptoolbar.hideAllSites}" id="lab-site-modal" class="info-modal">
+	<div class="inner-info-modal">
+		<h3>${toptoolbar.getLabSiteModalTitleText}</h3>
+		<p>${toptoolbar.getLabSiteModalBodyText}</p>
+
+	</div>
+		<div class="info-modal-btn-wrapper">
+			<a href="${toptoolbar.getLabSiteModalURL}.html" class="enter-website-link"><span class="info-modal-btn">${toptoolbar.getLabSiteModalLinkText}</span></a>
+		</div>
+	<div class="info-modal-close-btn">&#10005;</div>
+</div>
+
+<div id="site-overlay"></div>-->

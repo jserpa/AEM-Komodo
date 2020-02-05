@@ -1,0 +1,467 @@
+/*
+	HEADER
+*/
+
+.header{
+	background-color:#F6F6F6;
+	border-top:1px solid #d8d8d8;
+	border-bottom:1px solid #d8d8d8;
+	position: fixed;
+	z-index: 160;
+	width: 100%;
+	height:57px;
+}
+
+.header .container{
+	position:relative;
+}
+
+.header-inner{
+	padding:10px 0;
+}
+
+#patient-logo, #hcp-logo, #lab-logo{
+	display:none;
+}
+
+.path-patient #patient-logo{
+	display:block;
+}
+
+.path-hcp #hcp-logo{
+	display:block;
+}
+
+.path-hcp #patient-logo{
+	display:none;
+}
+
+.path-lab #lab-logo{
+	display:block;
+}
+
+.path-lab #patient-logo{
+	display:none;
+}
+
+.buyer-type-logo{
+    width:200px;
+    float:left;
+    display:inline-block;
+}
+
+.header-input{
+	border:1px solid #D8D8D8;
+	border-radius:4px;
+	background-color:#FFFEFF;
+	height:30px;
+	float:right;
+	margin-left:10px;
+	display:inline-block;
+}
+
+#header-search{
+	width:100%;
+	background-image:url('/etc.clientlibs/diagnostics/components/structure/toptoolbar/clientlib/resources/search.png');
+	background-repeat:no-repeat;
+	background-position:98% center;
+	background-size:14px 14px;
+	padding:0 30px 0 10px;
+	display:inline-block;
+	float:right;
+	margin-top:4px;
+}
+
+#header-search::placeholder {
+  color: #B4B3B4;
+  opacity: 1;
+}
+
+#header-search:-ms-input-placeholder {
+  color: #B4B3B4;
+}
+
+#header-search::-ms-input-placeholder {
+  color: #B4B3B4;
+}
+
+#header-search.show-mobile{
+	display:inline-block;
+}
+
+#site-selector-container{
+	visibility:hidden;
+}
+
+.site-block-wrapper{
+	float:none;
+	height:100%;
+	vertical-align:middle;
+	display:none;
+	background-color:#EAEAEA;
+	cursor:pointer;
+	text-decoration:none !important;
+}
+
+.site-block{
+	font-family: HelveticaNeueLTStd-Lt, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #9B9B9B;
+	text-align:center;
+	line-height:14px;
+}
+
+.site-block-wrapper:first-child{
+	background-color:#7474B6;
+	display:table-cell;
+}
+
+.path-hcp .site-block-wrapper:first-child{
+	background-color:#6FABDC;
+}
+
+.path-lab .site-block-wrapper:first-child{
+	background-color:#EF2E34;
+}
+
+.site-block-wrapper:first-child .site-block{
+	color:#ffffff;
+}
+
+.site-block-wrapper:last-child{
+	border-left:1px solid #BBBABA;
+	border-right:1px solid #BBBABA;
+}
+
+.site_selector_wrapper{
+	height:55px;
+	position:relative;
+	display:table;
+	float:right;
+}
+
+.mobile-search-btn{
+	display:none;
+	padding-top:3px;
+	cursor:pointer;
+	margin-right:10px;
+	max-width:27px;
+}
+
+#mobile-nav-btn{
+	display:none;
+	color:#D8D8D8;
+	font-size:25px;
+	padding-top:5px;
+	cursor:pointer;
+}
+
+.header .country-modal-btn{
+	border-radius:4px;
+	font-family: HelveticaNeueLTStd-Lt, Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height:1;
+	color: #565859;
+	text-align:center;
+	padding: 10px 0 8px 0;
+	cursor: pointer;
+	background-size: 22px 22px;
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	background-image: url(uk_flag_icon.png);
+	max-width: 200px;
+	display: inline-block;
+	padding-left: 40px;
+	float: right;
+}
+
+.search-form { 
+	position: relative; 
+}
+.search-button {
+	position: absolute;
+	right: 0;
+	width: 26px;
+	height: 34px;
+	cursor: pointer;
+	display: block;
+}
+
+#header-inner-wrapper.col-sm-11{
+	padding-right:0;
+}
+
+#site-selector-container.col-sm-1{
+	padding-left:0;
+}
+
+#site-indicator-modal{
+	position: absolute;
+	top: 80px;
+	margin: 0;
+	left: auto;
+	right: 35px;
+}
+
+#site-indicator-modal img{
+	width:42px;
+	height:auto;
+}
+
+#site-indicator-modal h3{
+	margin:0;
+}
+
+#site-indicator-modal::after{
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 15px solid #7474b4;
+	content: '';
+	position: absolute;
+	top: -15px;
+	right: 10px;
+}
+
+
+@media screen and (min-width: 768px){
+	.navigation.mobile-search-margin{
+		margin-top:57px;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	#site-indicator-modal{
+		display:none !important;
+	}
+
+	#header-inner-wrapper{
+		padding:0 15px !important;
+		width:100%;
+	}
+
+	#header-logo{
+		 max-width: 175px;
+	}
+	#header-search{ 
+		background-image: none;
+		max-width: 100%;
+		background-color: #fff;
+		margin:10px 0 0 0;
+		display: none;
+	}
+	#header-search.show-mobile{
+		display:block;
+	}
+	.mobile-search-btn {
+		display:inline-block;
+	}
+	.header{
+		background-color:#ffffff;
+	}
+	.header .country-modal-btn{
+		display:none;
+	}
+	
+	.no-padding { padding: 0; } 
+	ul.ui-menu.ui-widget.ui-widget-content { 
+		background: #fff !important; 
+		/* display:block !important; */
+		left: 12px !important;
+		padding-top: 0;
+	}
+	.custom-title { 
+		background: #eee;
+		margin-top: 6px !important;
+	} 
+	#mobile-nav-btn{
+		display:inline-block;
+	} 
+	#header-search.show-mobile{
+		display:inline-block;
+	}
+	.search-button {
+		display: none;
+	}
+
+	.header .container{
+		padding:0;
+	}
+
+	.header-inner{
+		background-color:#ffffff;
+		border-bottom:1px solid #d8d8d8;
+		padding:10px 15px;
+	}
+
+	#site-selector-container{
+		display:none;
+	}
+}
+
+.ui-autocomplete {
+	right: 0!important;
+	top: 30px;
+   /* left: initial!important;*/
+	width: 100%;
+	max-width: 60%;
+	float:right;
+	border-radius: 0;
+	padding: 31px 5px 7px;
+	z-index: 9998!important;
+	position: absolute;
+	cursor: default;
+	display: none;
+}
+
+.ui-widget-content {
+	border: 1px solid #ddd;
+	background: #eee url(/etc.clientlibs/diagnostics/components/structure/toptoolbar/clientlib/resources/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x!important;
+	color: #333;
+}
+
+.ui-widget {
+}
+
+.info-modal{
+	width:500px;
+	margin:0 auto;
+	color:#ffffff;
+	background-color:#7474B6;
+	line-height: 24px;
+	position:absolute;
+	top:25%;
+	left:0;
+	right:0;
+	z-index:1000;
+	position:absolute;
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+	position:fixed;
+	display:none;
+	max-width:90%;
+}
+
+#hcp-site-modal, .path-hcp .info-modal{
+	background-color:#6FABDC;
+}
+
+#lab-site-modal, .path-lab .info-modal{
+	background-color:#EF2E34;
+}
+
+.path-hcp #site-indicator-modal::after{
+	border-bottom: 15px solid #6FABDC;
+}
+
+.path-lab #site-indicator-modal::after{
+	border-bottom: 15px solid #EF2E34;
+}
+
+.inner-info-modal{
+	padding:25px 25px 15px 25px;
+}
+
+.info-modal h3{
+	font-family:  HelveticaNeueLTStd-Lt, Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+
+.info-modal p{
+	font-family: HelveticaNeueLTStd-Lt, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+.info-modal-btn{
+	width:100%;
+	font-family: HelveticaNeueLTStd-Lt, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #4A4A4A;
+	line-height: 24px;
+	padding:15px;
+	text-align:center;
+
+	background-color:#FFFFFF;
+
+	cursor:pointer;
+	border-bottom:1px solid #9B9B9B;
+	display:block;
+	width:100%;
+}
+
+
+.info-modal-btn-wrapper a{
+	text-decoration:none !important;
+}
+
+.info-modal-btn:last-child{
+	border:0;
+}
+
+.path-hcp .info-modal-btn:hover{
+	background-color:#00568b !important;
+	color:#ffffff !important;
+}
+
+.path-lab .info-modal-btn:hover{
+	background-color:#ab2131 !important;
+	color:#ffffff !important;
+}
+
+#hcp-site-modal .info-modal-btn:hover{
+	background-color:#00568b !important;
+	color:#ffffff !important;
+}
+
+#lab-site-modal .info-modal-btn:hover{
+	background-color:#ab2131 !important;
+	color:#ffffff !important;
+}
+
+.info-modal-btn-wrapper{
+
+}
+
+.info-modal-close-btn{
+	cursor:pointer;
+	position:absolute;
+	top:5px;
+	right:15px;
+	color:#ffffff;
+	font-family:Helvetica,Arial,sans-serif;
+}
+
+#choose-language-modal .info-modal-btn{
+	text-align:left;
+}
+
+.inline-btns .info-modal-btn{
+	display:inline-block;
+	width:50%;
+	border:0;
+}
+
+.inline-btns .info-modal-btn:first-child{
+	border-right:1px solid #979797;
+}
+
+.inline-btns{
+	font-size:0;
+}
+
+#site-overlay{
+	background-color:rgba(0,0,0,.5);
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:100%;
+	z-index:999;
+	position:fixed;
+	display:none;
+}
