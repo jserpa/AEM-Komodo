@@ -1,0 +1,55 @@
+.brand-bar .brand {
+	display: block;
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+	/*Brand Bar*/
+	.brand-bar-container {
+		max-width: 746px;
+		margin: auto;
+	}
+	.brand-bar {
+		width: 100%;
+		background-color: #E71316;
+		display: inline-block;
+		height:80px;
+	}
+	.brand-bar ul {
+		list-style-type: none;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	.brand-bar li {
+		width: 20%;
+		float: left;
+	}
+	.brand-bar a {
+		display: block;
+		height: 80px;
+	}
+	.brand-bar a:hover {
+		border-bottom: 4px solid #ffffff;
+	}
+	.brand-bar .brand {
+		display: none;
+	}
+	.brand-bar .thermo {
+		display: block;
+		background-image: url(/img/thermo.png);
+		width: 152px;
+		height: 33px;
+		margin: auto;
+	}
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.brand-bar-container {
+		max-width: 970px;
+		margin: auto;
+	}
+}
