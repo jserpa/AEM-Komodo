@@ -1,0 +1,242 @@
+
+* {
+    font-family: HelveticaNeue !important;
+}
+
+.fixed-header-container {
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: -8px;
+  padding-bottom: 24px;
+  z-index: 100;
+}
+.header-container {
+  max-width: 1440px;
+  margin: auto;
+}
+.header-logo-img {
+  height: 32px;
+  width: 143px;
+}
+.top-nav-menu {
+  color: #222222;
+  border: none
+}
+.top-header-nav {
+  font-size: 14px;
+  font-weight: 900;
+  margin-top: 0px;
+  background-color: #ffffff;
+}
+.hamberber-icon {  
+  width: 32px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 6px 0;
+}
+.top-header-nav .nav-link {
+  padding-right: 16px !important
+}
+.navbar-light a {
+  color: #222222 !important;
+}
+.bottom-nav-bg {
+  background-color: #293E6B;
+  padding-top: 0px;
+}
+.bottom-header-nav {
+  font-size: 14px;
+  font-weight: 900;
+}
+.bottom-header-nav .nav-link {
+  padding-right: 32px !important
+}
+.navbar-dark a {
+  color:#ffffff !important;
+}
+.horizontal-gradient {
+  background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+  height: 100%;
+  width: 100%;
+}
+.fixed-jumbotron {
+  position: fixed;
+  top: 70px;
+  width: 100%
+}
+.fixed-header-banner  {
+  margin-top: 0px;
+  padding-top: 0px !important;
+}
+.jumbotron {
+  background-image: url(../img/hero.png);
+  background-size: cover;
+  padding-bottom: 0px;
+  background-position: center;
+  padding-top: 0px;
+}
+.display-4 {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 200;
+}
+.lead {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 100;
+}
+.bottom-links {
+  background: linear-gradient(to right, rgba(164,83,109,0.85), rgba(41,62,107,0.85));
+}
+.bottom-link-list {
+  padding: 32px 16px;
+  font-weight: 300
+}
+.bottom-link-list a {
+  color: #ffffff;
+}
+.bottom-link-list .active {
+  color: #ffffff;
+  font-weight: 900;
+}
+.bottom-link-list a:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
+.bottom-link-list .list-inline-item {
+  padding-right: 32px
+}
+.footer-container {
+  background-color: #293E6B;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 200;
+}
+.footer-container a {
+  color: #ffffff;
+}
+.footer-container a:hover {
+  text-decoration: none;
+  color: #cccccc;
+}
+.footer-container footer {
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 90px
+}
+.footer-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 200;
+}
+.footer-tag {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: right;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.footer-legal {
+  background-color: #E71316;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 30px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+.footer-legal a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-legal a:hover {
+  color: #cccccc;
+}
+.footer-legal-container {
+  max-width: 1440px;
+  margin: auto;
+}
+.list-inline-item {
+  display: inline-block;
+}
+@media (min-width: 992px) {
+  .list-inline-item {
+    display: inline-block;
+  }
+}
+.top-banner {
+  background-color: #1E8AE7;
+  color: #ffffff;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  margin-top: -24px !important
+}
+.navbar-brand {
+  padding-right: 16px
+}
+.top-banner-hide {
+  background-color: #1E8AE7;
+  color: #ffffff;
+  z-index: 100;
+  top: 0px;
+  width: 100%;
+}
+.spacer {
+  top:80px !important;
+}
+.teaser-card {
+  padding: 0px;
+}
+
+.teaser-card div {
+  margin-top: 0px;
+ }
+.header-jtron {
+  margin-top 64px;
+}
+.fixed-header-banner {
+  top: 148px;
+}
+.alert {
+  margin-bottom: 0px;
+  height: auto;
+  margin: 8px 0px 8px 0px;
+}
+.bottom-nav-banner {
+  padding-top: 230px
+}
+@media (min-width: 992px) {
+  .fixed-header-banner {
+    top: 0px;
+  }
+  .alert {
+    height: auto;
+  }
+  .fixed-jumbotron.fixed-header-banner {
+    top: 80px !important;
+  }
+  .fixed-jumbotron {
+    top: 0px;
+  }
+  .bottom-nav-banner {
+    padding-top: 160px
+  }
+}
+.chevron-arrow-left {
+  display: inline-block;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  width: 10px; height: 10px;
+  transform: rotate(-225deg);
+}
+.stick-hights {
+  height: 10px;
+  width: 100px;
+  background-color: aqua;
+  position: relative;
+  z-index: 500;
+  margin-top: -24px;
+}
